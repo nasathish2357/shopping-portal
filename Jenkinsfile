@@ -27,7 +27,7 @@ pipeline{
                 sh 'npm run package'
             }
         }
-		stage('archive'){
+	stage('archive'){
             steps{
                 archiveArtifacts '**/distribution/*.zip'
             }
